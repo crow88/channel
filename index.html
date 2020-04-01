@@ -7,9 +7,14 @@
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="-1">
     <meta name="format-detection" content="telephone=no">
-    <title>아이돌마스터 신데렐라 걸즈</title>
-    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Fnew_mypage_common.css%3Fv%3D20191128144721" media="all">
-    <link rel="apple-touch-icon-precomposed" href="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fui%2Ficon_bookmark.png%3Fv%3D20191128144726">
+    <title>アイドルマスター シンデレラガールズ</title>
+    <link rel="stylesheet" type="text/css" href="12008305/css/rich/new_mypage_common.css" media="all">
+    <link rel="apple-touch-icon-precomposed" href="12008305/image_sp/ui/icon_bookmark.png">
+    <script>
+        (function() {
+            window.console.log = function() {};
+        })();
+    </script>
     <script type="text/javascript">
         if (window.localStorage) {
             var displaySet = localStorage.getItem('DisplayPositionSet');
@@ -30,11 +35,11 @@
             document.write('<meta name="viewport" content="width=device-width, user-scalable=no">');
         }
     </script>
-    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fjquery-2.2.2.min.js%3Fv%3D20170222083919"></script>
+    <script src="12008305/js/jquery-2.2.2.min.js"></script>
     <script>
         (function() {
             window.viewer_id = 135283365;
-            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_error%2Freport_js_error%3Fl_frm%3DRadio_archive_1%26rnd%3D640266156";
+            var _url = "http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_error%2Freport_js_error%3Fl_frm%3DRadio_archive_1%26rnd%3D337521780";
             var _path = location.href;
             var _spec_obj;
             var _spec = 'none';
@@ -57,42 +62,24 @@
             } else {
                 _spec = 'browser?';
             }
-            var _ua = window.navigator.userAgent.toLowerCase();
-            window.onerror = function(msg, file, line, col, error) {
-                $.ajax({
-                    url: _url,
-                    type: 'post',
-                    data: {
-                        'ua': _ua,
-                        'viewer_id': window.viewer_id,
-                        'path': _path,
-                        'line': line,
-                        'column': col,
-                        'error': error,
-                        'spec': _spec,
-                        'spec_obj': _spec_obj,
-                        'version': version
-                    }
-                })
-            };
         })();
     </script>
-    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Funderscore-min.js%3Fv%3D20170222083931"></script>
-    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Frequire.js%3Fv%3D20170222083930"></script>
-    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Frequire.js%3Fv%3D20170222083930"></script>
+    <script src="12008305/js/underscore-min.js"></script>
+    <script src="12008305/js/require.js"></script>
+    <script src="12008305/js/require.js"></script>
     <script>
         requirejs.config({
             paths: {
-                easeljs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Feaseljs-0.8.2.min.js%3Fv%3D20170222083918",
-                easeljs_0_7_1: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Feaseljs-0.7.1.min.js%3Fv%3D20170222083918", //スプライトを読むためのバージョン
-                tweenjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Ftweenjs-0.6.2.min.js%3Fv%3D20170222083931",
-                movieclipjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fmovieclip-0.7.1.min.js%3Fv%3D20190524145756",
-                createjs: "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcreatejs-2015.11.26.min.js%3Fv%3D20190909144732",
+                easeljs: "12008305/js/easeljs-0.8.2.min",
+                easeljs_0_7_1: "12008305/js/easeljs-0.7.1.min", //スプライトを読むためのバージョン
+                tweenjs: "12008305/js/tweenjs-0.6.2.min",
+                movieclipjs: "12008305/js/movieclip-0.7.1.min",
+                createjs: "12008305/js/createjs-2015.11.26.min",
             }
         })
     </script>
-    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcommon.js%3Fv%3D20191018114616"></script>
-    <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fcommon_new.js%3Fv%3D20191108144617"></script>
+    <script src="12008305/js/common.js"></script>
+    <script src="12008305/js/common_new.js"></script>
     <script>
         $(function() {
             window.$ibox = $('.ibox').ibox();
@@ -111,8 +98,8 @@
             chrome_app_flg = 0,
             chrome_app_extension_id = 'dnacabmnfmejgfffmcehejcmiciinpej';
     </script>
-    <script type='text/javascript' src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fapp_sound.js%3Fv%3D20170222083914'></script>
-    <link rel="stylesheet" type="text/css" href="http://sp.pf-img-a.mbga.jp/css/base.css?20171116" />
+    <script type='text/javascript' src='12008305/js/app_sound.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
 </head>
 
 <body id="radio" class="archive">
@@ -121,19 +108,19 @@
             <div class="area_menu_header_6btn">
                 <h1 id="JtextLimit">アーカイブ放送</h1>
                 <ul>
-                    <li><a class="head_menu_01" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmypage%3Fl_frm%3DRadio_archive_1%26rnd%3D150335231">
+                    <li><a class="head_menu_01" href="">
                             <div></div>
                         </a></li>
-                    <li><a class="head_menu_02" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpetit_cg%3Fl_frm%3DRadio_archive_1%26rnd%3D695030705">
+                    <li><a class="head_menu_02" href="">
                             <div></div>
                         </a></li>
-                    <li><a class="head_menu_03" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgacha%3Fl_frm%3DRadio_archive_1%26rnd%3D908832237">
+                    <li><a class="head_menu_03" href="">
                             <div></div>
                         </a></li>
-                    <li><a class="head_menu_04" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_str%3Fl_frm%3DRadio_archive_1%26rnd%3D295833847">
+                    <li><a class="head_menu_04" href="">
                             <div></div>
                         </a></li>
-                    <li><a class="head_menu_05" href="http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fauction%2Fauction_top%3Fl_frm%3DRadio_archive_1%26rnd%3D278908">
+                    <li><a class="head_menu_05" href="">
                             <div></div>
                         </a></li>
                     <li><a class="head_menu_06 se_000" href="#" id="headerAcd">
@@ -141,98 +128,9 @@
                         </a></li>
                 </ul>
             </div>
-            <div id="headerPopupMenu" class="headerPopupMenu">
-                <div class="m-Top10 t-Cnt">
-                    <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fevent_produce%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D826867483' class="jsOnDesignBtn"><img src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fevent%2F1723%2Fbanner_event_01.png%3Fv%3D20191128144722' width="280" height="60"></a>
-                </div>
-                <div class="area_menu_header_main4">
-                    <ul>
-                        <li><a class="btn_menu_header_lesson" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_str%3Fl_frm%3DRadio_archive_2%26rnd%3D954352969'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_work" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fquests%3Fl_frm%3DRadio_archive_1%26rnd%3D707198230'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_livebattle" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fbattles%3Fl_frm%3DRadio_archive_1%26rnd%3D883824206'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_deck" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fdeck%3Fl_frm%3DRadio_archive_1%26rnd%3D500973731'>
-                                <div></div>
-                            </a></li>
-                    </ul>
-                </div>
-                <h3 class="icon_menu_header_01"></h3>
-                <div class="area_menu_header_4">
-                    <ul>
-                        <li><a class="btn_menu_header_shop" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fshop%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D67725532'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_item" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fitem%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D687765804'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_present" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpresent%2Frecieve%2F%3Fview_auth_type%3D1%26cache%3D1%26l_frm%3DRadio_archive_1%26rnd%3D772605651'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_change" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fexchange%2Fmedal_list%2F999999%3Fl_frm%3DRadio_archive_1%26rnd%3D651322786'>
-                                <div></div>
-                            </a></li>
-                    </ul>
-                </div>
-                <h3 class="icon_menu_header_02"></h3>
-                <div class="area_menu_header_5">
-                    <ul>
-                        <li><a class="btn_menu_header_idollist" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_list%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D791245'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_trainer" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcard_storage%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D362828799'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_production" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fknights%2Fnot_join_knights_top%3Fl_frm%3DRadio_archive_1%26rnd%3D360362848'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_pra" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fp_ranking_award%3Fl_frm%3DRadio_archive_1%26rnd%3D629013183'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_profile" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fresults%3Fl_frm%3DRadio_archive_1%26rnd%3D564223524'>
-                                <div></div>
-                            </a></li>
-                    </ul>
-                </div>
-                <h3 class="icon_menu_header_03"></h3>
-                <div class="area_menu_header_4">
-                    <ul>
-                        <li><a class="btn_menu_header_favorite" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Ffriend%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D49896039'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_memory" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmemorial%3Fl_frm%3DRadio_archive_1%26rnd%3D455326933'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_gamecenter" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fgame_center%3Fl_frm%3DRadio_archive_1%26rnd%3D649063515'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_sound" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fs_booth%3Fl_frm%3DRadio_archive_1%26rnd%3D636930091'>
-                                <div></div>
-                            </a></li>
-                    </ul>
-                </div>
-                <h3 class="icon_menu_header_04"></h3>
-                <div class="area_menu_header_3">
-                    <ul>
-                        <li><a class="btn_menu_header_setting" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fpersonal_option%3Fl_frm%3DRadio_archive_1%26rnd%3D898043303'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_help" href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fadvise%2Findex%2Ftop%3Fl_frm%3DRadio_archive_1%26rnd%3D742331134'>
-                                <div></div>
-                            </a></li>
-                        <li><a class="btn_menu_header_top" href='http://sp.pf.mbga.jp/12008305/?guid=ON'>
-                                <div></div>
-                            </a></li>
-                    </ul>
-                </div>
-            </div>
         </nav>
         <input id="delay" type="hidden" value="0">
-        <link rel="stylesheet" type="text/css" href='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fcss%2Frich%2Flive_broadcast.css%3Fv%3D20190719144641' media="all">
+        <link rel="stylesheet" type="text/css" href='12008305/css/rich/live_broadcast.css' media="all">
         <div class="studio_area">
             <div id="live_broadcast">
                 <div id="main_area">
@@ -297,7 +195,7 @@
                 <div class="radio_text_archive_notice"></div>
             </div>
             <div class="message_submit_restrict red t-Cnt m-Btm8" style="display:none;">
-                <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Fhelp%3Fl_frm%3DRadio_archive_1%26rnd%3D495051862' class="btn_sup_line_2 m-Top4 m-Cnt m-Btm4">注意事項</a>
+                <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Fhelp%3Fl_frm%3DRadio_archive_1%26rnd%3D317947803' class="btn_sup_line_2 m-Top4 m-Cnt m-Btm4">注意事項</a>
             </div>
             <div id="enquete_detail_area" class="jsOnDesignBtn-wrap"></div>
             <div class="radio_frame m-Cnt m-Top12">
@@ -391,141 +289,142 @@
 </div>
 </div>
 </script>
-        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fbackbone-min.js%3Fv%3D20170222083914"></script>
-        <script src="http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Fmin%2Flive_broadcast_archive.min.js%3Fv%3D20191129144627"></script>
-        <script src='http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Farea_slide.js%3Fv%3D20170222083914'></script>
+        <script src="12008305/js/backbone-min.js"></script>
+        <script src="12008305/js/min/live_broadcast_archive.min.js"></script>
+        <script src='12008305/js/area_slide.js'></script>
         <script>
             var cjs_list = [
-                'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2F8%2Fcjs001_character.js%3Fv%3D20190524145756',
-                "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2Fcjs002_live_text.js%3Fv%3D20190524145756",
-                "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2Fcjs003_clock.js%3Fv%3D20190524145756",
-                "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2Fcjs004_balloon.js%3Fv%3D20190524145756",
-                "http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Flive_broadcast%2Fcjs005_omikuji.js%3Fv%3D20190524145756",
+                '12008305/js/live_broadcast/8/cjs001_character.js',
+                "12008305/js/live_broadcast/cjs002_live_text.js",
+                "12008305/js/live_broadcast/cjs003_clock.js",
+                "12008305/js/live_broadcast/cjs004_balloon.js",
+                "12008305/js/live_broadcast/cjs005_omikuji.js",
             ]
             var manifest = [{
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F1.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/1.png',
                     id: "c0008_1"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F2.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/2.png',
                     id: "c0008_2"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F3.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/3.png',
                     id: "c0008_3"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F4.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/4.png',
                     id: "c0008_4"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F5.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/5.png',
                     id: "c0008_5"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F6.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/6.png',
                     id: "c0008_6"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F7.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/7.png',
                     id: "c0008_7"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F8.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/8.png',
                     id: "c0008_8"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fcast%2F8%2F9.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/cast/8/9.png',
                     id: "c0008_9"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Flive.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/live.png',
                     id: "live"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_0.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_0.png',
                     id: "no_0"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_1.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_1.png',
                     id: "no_1"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_2.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_2.png',
                     id: "no_2"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_3.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_3.png',
                     id: "no_3"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_4.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_4.png',
                     id: "no_4"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_5.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_5.png',
                     id: "no_5"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_6.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_6.png',
                     id: "no_6"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_7.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_7.png',
                     id: "no_7"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_8.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_8.png',
                     id: "no_8"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fno_9.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/no_9.png',
                     id: "no_9"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fsecond.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/second.png',
                     id: "second"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_00.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/omikuji_0.png',
                     id: "omikuji_00"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_01.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/omikuji_1.png',
                     id: "omikuji_01"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_02.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/omikuji_2.png',
                     id: "omikuji_02"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_03.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/omikuji_3.png',
                     id: "omikuji_03"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_04.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/omikuji_4.png',
                     id: "omikuji_04"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_05.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/omikuji_5.png',
                     id: "omikuji_05"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_06.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/omikuji_6.png',
                     id: "omikuji_06"
                 },
                 {
-                    src: 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fimage_sp%2Fcampaign%2Fradio%2Flivebroadcast%2Fsprite%2Fstudio%2Fomikuji_reverse.png%3Fv%3D20190524145526',
+                    src: '12008305/image_sp/campaign/radio/livebroadcast/sprite/studio/omikuji_reverse.png',
                     id: "omikuji_reverse"
                 },
             ]
             var url = {
-                "restrict_redirect": 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D779434956',
+                "restrict_redirect": 'http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Findex%3Fl_frm%3DRadio_archive_1%26rnd%3D620063563',
             };
             var api_url = {
-                "get_archives": '12008305/radio/api_get_archives',
+                "get_archives": 'a.json',
             };
-            var area_slide_url = 'http://sp.pf-img-a.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fjs%2Farea_slide.js%3Fv%3D20170222083914';
+            // くじ引き形式のparamデータ
+            var area_slide_url = '12008305/js/area_slide.js';
             var in_social_game_viewer = false;
             try {
                 in_social_game_viewer = (chrome in window);
@@ -557,10 +456,10 @@
                 });
             })
         </script>
-        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Findex%3Fl_frm%3DRadio_archive_2%26rnd%3D550948956'>
+        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fradio%2Findex%3Fl_frm%3DRadio_archive_2%26rnd%3D962902108'>
             <div class="backLink">デレマスチャンネルTOP</div>
         </a>
-        <a href='http://sp.pf.mbga.jp/12008305/?guid=ON&amp;url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fmypage%3Fl_frm%3DRadio_archive_2%26rnd%3D888768977'>
+        <a href='https://crow88.github.io/lab/'>
             <div class="backLink">マイスタジオ</div>
         </a>
         <footer>
@@ -587,41 +486,6 @@
         };
     </script>
     <div id="mbga-pf-footer">
-        <div class="mbga-pf-footer-container odd-lines mbga-pf-footer-white">
-            <ul>
-                <li class="mbga-pf-footer-list">
-                    <div class="mbga-pf-fotter-content">
-                        <a class="mbga-pf-footer-arrow" href="http://sp.mbga.jp/_grp_view?g=32095227">
-                            <span class="mbga-pf-footer-caption">公式サークル</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div id="mbga-pf-footer-navbar">
-            <ul class="mbga-pf-box-h">
-                <li id="mbga-pf-footer-navbar-icon-grid" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-home-w" href="http://sp.mbga.jp/?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">ホーム</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-mypage" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-mypage-w" href="http://sp.mbga.jp/_my0?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">マイページ</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-mygame" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-mygame-w" href="http://sp.mbga.jp/_game_my_top?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">マイゲーム</span>
-                    </a>
-                </li>
-                <li id="mbga-pf-footer-navbar-icon-notification" class="mbga-pf-footer-li">
-                    <a class="mbga-pf-footer-a mbga-pf-footer-game-w" href="http://sp.mbga.jp/_game_top?_from=globalfooter">
-                        <span class="mbga-pf-footer-txt">ゲーム</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
         <script type="text/javascript" charset="UTF-8">
             (function() {
                 document.addEventListener('DOMContentLoaded', function() {
