@@ -13,7 +13,7 @@
 "expression_type":"",
 "effect_type":"",
 "motion_type":"",
-"json_layer_effects":{"1":{"state":0},"2":{"state":0},"3":{"state":0},"4":{"id":"3","effect_name":"ユーザコメント","category_name":"user_comment","effectid":"1","image_path":"","state":1,"categoryid":3},"5":{"state":0},"6":{"id":"5","effect_name":"オープニング","category_name":"wall2","effectid":"1","image_path":"https://crow88.github.io/channel/12008305/image_sp/campaign/radio/livebroadcast/bg/0_open.jpg","state":1,"categoryid":5}},
+"json_layer_effects":'{"1":{"state":0},"2":{"state":0},"3":{"state":0},"4":{"id":"3","effect_name":"ユーザコメント","category_name":"user_comment","effectid":"1","image_path":"","state":1,"categoryid":3},"5":{"state":0},"6":{"id":"5","effect_name":"オープニング","category_name":"wall2","effectid":"1","image_path":"https://crow88.github.io/channel/12008305/image_sp/campaign/radio/livebroadcast/bg/0_open.jpg","state":1,"categoryid":5}}',
 "send_time":"1970-01-01 09:00:00.0000",
 "send_timestamp":"0.0000",
 "layer_effects_set_id":""
